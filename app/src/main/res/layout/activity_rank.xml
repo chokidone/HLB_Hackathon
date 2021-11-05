@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/avatar"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:text="You are on the top 5% in terms of financial literacy among your peers! \n \n Rank: 25th" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gasoline"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="16dp"
+        android:text="Your are 1234 droplets away from overtaking the 24th rank! \n\n Do more missions to get more water droplets!" />
+
+    //bottom navigation
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHeight="50dp">
+
+            <ImageButton
+                android:id="@+id/navi_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/home"/>
+
+            <ImageButton
+                android:id="@+id/navi_mission"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/mission"/>
+
+            <ImageButton
+                android:id="@+id/navi_rank"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/leaderboard"/>
+
+            <ImageButton
+                android:id="@+id/navi_quiz"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/quiz"/>
+
+            <ImageButton
+                android:id="@+id/navi_crm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/crm"/>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

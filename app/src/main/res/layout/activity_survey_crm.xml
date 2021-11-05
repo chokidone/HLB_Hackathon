@@ -1,0 +1,261 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Financial Literacy Survey"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:text="1. How much allowance do you get from your family per week?"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TableRow>
+                    <RadioButton
+                        android:id="@+id/question1_rad1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:text="RM 0 - RM 10"/>
+
+                    <RadioButton
+                        android:id="@+id/question1_rad2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:text="RM 10 - RM 20"/>
+                </TableRow>
+
+                <TableRow>
+                    <RadioButton
+                        android:id="@+id/question1_rad3"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:text="RM 20 - RM 30" />
+
+                    <RadioButton
+                        android:id="@+id/question1_rad4"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:text="RM 30 - RM 40" />
+                </TableRow>
+
+                <TableRow>
+                    <RadioButton
+                        android:id="@+id/question1_rad5"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:text="RM 50 and above" />
+                </TableRow>
+            </TableLayout>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:text="2. How much is your expected expenditure every week?"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp">
+
+                <TableRow>
+                    <RadioButton
+                        android:id="@+id/question2_rad1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:text="RM 0 - RM 10" />
+
+                    <RadioButton
+                        android:id="@+id/question2_rad2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:text="RM 10 - RM 20" />
+                </TableRow>
+
+                <TableRow>
+                    <RadioButton
+                        android:id="@+id/question2_rad3"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:text="RM 20 - RM 30" />
+
+                    <RadioButton
+                        android:id="@+id/question2_rad4"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:text="RM 30 - RM 40" />
+                </TableRow>
+
+                <TableRow>
+                    <RadioButton
+                        android:id="@+id/question2_rad5"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:text="RM 50 and above" />
+                </TableRow>
+            </TableLayout>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:text="3. How much do you want to save per month?"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp">
+
+                <TableRow>
+                    <RadioButton
+                        android:id="@+id/question3_rad1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:text="RM 0 - RM 10" />
+
+                    <RadioButton
+                        android:id="@+id/question3_rad2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:text="RM 10 - RM 20" />
+                </TableRow>
+
+                <TableRow>
+                    <RadioButton
+                        android:id="@+id/question3_rad3"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:text="RM 20 - RM 30" />
+
+                    <RadioButton
+                        android:id="@+id/question3_rad4"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:text="RM 30 - RM 40" />
+                </TableRow>
+
+                <TableRow>
+                    <RadioButton
+                        android:id="@+id/question3_rad5"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="25dp"
+                        android:text="RM 50 and above" />
+                </TableRow>
+            </TableLayout>
+        </RadioGroup>
+    </LinearLayout>
+
+    //bottom navigation
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight="50dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/navi_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/home" />
+
+            <ImageButton
+                android:id="@+id/navi_mission"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/mission" />
+
+            <ImageButton
+                android:id="@+id/navi_rank"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/leaderboard" />
+
+            <ImageButton
+                android:id="@+id/navi_quiz"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/quiz" />
+
+            <ImageButton
+                android:id="@+id/navi_crm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/crm" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

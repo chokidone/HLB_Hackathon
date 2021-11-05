@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    //bottom navigation
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHeight="50dp">
+
+            <ImageButton
+                android:id="@+id/navi_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/home"/>
+
+            <ImageButton
+                android:id="@+id/navi_mission"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/mission"/>
+
+            <ImageButton
+                android:id="@+id/navi_rank"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/leaderboard"/>
+
+            <ImageButton
+                android:id="@+id/navi_quiz"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/quiz"/>
+
+            <ImageButton
+                android:id="@+id/navi_crm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/crm"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/tree_image"
+            android:layout_width="325dp"
+            android:layout_height="425dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/transparent"
+            android:src="@drawable/tree0"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="200dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Click the tree for financial tip of the day!"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/give_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Give Water"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tree_image" />
+
+        <ImageButton
+            android:id="@+id/garden"
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/garden3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/garden">
+
+            <TextView
+                android:id="@+id/water_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:textSize="26sp"
+                android:text="5"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/water_image"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:src="@drawable/water"
+                android:layout_weight="1"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

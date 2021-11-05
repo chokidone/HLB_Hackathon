@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="Missions"
+        android:textSize="30sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="Login daily for 1 drop of water" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="Login for 7 days straight to get a bonus of 10 drops of water" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="Read financial tips daily for 5 drops of water" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="Do a financial literacy test/quiz every 7 days for 10 drops of water" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="Save/deposit money into the account (One transaction = 20 drops) [Limited to 5 transactions per month for water droplets]" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:text="After 1000 drops, a new tree would be grown and the old tree would be in the gallery" />
+
+    //bottom navigation
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight="50dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/navi_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/home"/>
+
+            <ImageButton
+                android:id="@+id/navi_mission"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/mission"/>
+
+            <ImageButton
+                android:id="@+id/navi_rank"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/leaderboard"/>
+
+            <ImageButton
+                android:id="@+id/navi_quiz"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/quiz"/>
+
+            <ImageButton
+                android:id="@+id/navi_crm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/crm"/>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

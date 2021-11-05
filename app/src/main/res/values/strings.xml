@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Forest Feature for Pocket Connect</string>
+    <string name="correct"><b>CORRECTNESS IS</b> \n
+                           <b>%1$d</b> OUT OF 6</string>
+
+    <string name="correct_answer">That\'s correct</string>
+    <string name="wrong_answer">That\'s incorrect</string>
+
+    <string name="a">If I overspend my allowance, I should expect my parents to give me more money.</string>
+    <string name="b">Saving money is a good idea.</string>
+    <string name="c">You would have more money in the future if you start saving now.</string>
+    <string name="d">Everyone has the same spending plans.</string>
+    <string name="e">You need to use money to buy things at the store.</string>
+    <string name="f">I should discuss my spending plans with my parents</string>
+
+    <string name="true_text">TRUE</string>
+    <string name="false_text">FALSE</string>
+
+    <string name="next_text">next</string>
+    <string name="prev_text">previous</string>
+</resources>
